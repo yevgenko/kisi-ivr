@@ -3,5 +3,5 @@ source "https://rubygems.org"
 ruby '2.2.3'
 
 gem "rack"
-gem "curb"
+gem "kisi-client"
 gem "thin"

@@ -1,17 +1,21 @@
-require './lib'
+require 'kisi/client'
 
 KISI_TOKEN = ENV['KISI_TOKEN']
 PHONE = ENV['PHONE']
+
+def kisi
+  @kisi ||= Kisi::Client.new KISI_TOKEN
+end
 
 app = -> (env) do
   req = Rack::Request.new(env)
 
   if req.post? && req.params['From'].include?(PHONE)
     if req.params['Digits']
-      doors = get_doors_list(KISI_TOKEN)
+      doors = kisi.get_doors
       door = doors[req.params['Digits'].to_i - 1]
       greeting = if door
-                   open_door(door, KISI_TOKEN)
+                   kisi.open_door(door)
                    "Welcome!"
                  else
                    "Can't find the door!"
@@ -25,7 +29,7 @@ app = -> (env) do
       EOH
     else
       greeting = "Welcome!"
-      doors = get_doors_list(KISI_TOKEN)
+      doors = kisi.get_doors
       doors.each_with_index do |current_door, i|
         greeting << "To open #{current_door["name"]}, press #{i+1}."
       end
