@@ -2,5 +2,15 @@
   "name": "KISI IVR",
   "description": "Interactive voice response system for unlocking the doors with just a phone",
   "repository": "https://github.com/yevgenko/kisi-ivr",
-  "keywords": ["KISI", "IVR"]
+  "keywords": ["KISI", "IVR"],
+  "env": {
+    "KISI_TOKEN": {
+      "description": "The token to access KISI API",
+      "value": ""
+    },
+    "PHONE": {
+      "description": "Phone number allowed to use IVR",
+      "value": "0"
+    }
+  }
 }
