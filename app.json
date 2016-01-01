@@ -5,10 +5,10 @@
   "keywords": ["KISI", "IVR"],
   "env": {
     "KISI_TOKEN": {
-      "description": "The token to access KISI API",
+      "description": "The token to access KISI API"
     },
     "PHONE": {
-      "description": "Phone number allowed to use IVR, e.g. your mobile number",
+      "description": "Phone number allowed to use IVR, e.g. your mobile number"
     }
   }
 }
