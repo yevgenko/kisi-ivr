@@ -11,5 +11,5 @@
       "description": "Phone number allowed to use IVR, e.g. your mobile number"
     }
   },
-  "success_url": "https://github.com/yevgenko/kisi-ivr/wiki/Twillio-Setup"
+  "success_url": "https://github.com/yevgenko/kisi-ivr/wiki/Twilio-Setup"
 }

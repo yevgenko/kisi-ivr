@@ -8,12 +8,12 @@ Interactive voice response system for unlocking the doors with just a phone.
 
 * KISI Token
 * [Heroku Account](https://www.heroku.com/)
-* [Twillio Account](https://www.twilio.com/)
+* [Twilio Account](https://www.twilio.com/)
 
 ## Setup
 
 * [Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/yevgenko/kisi-ivr)
-* [Follow instruction for Twillio configuration](https://github.com/yevgenko/kisi-ivr/wiki/Twillio-Setup)
+* [Connect Phone Number to the app](https://github.com/yevgenko/kisi-ivr/wiki/Twilio-Setup)
 
 ## Q&A
 
