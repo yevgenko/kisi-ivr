@@ -8,7 +8,7 @@ Interactive voice response system for unlocking the doors with just a phone.
 
 ## Requirements
 
-* KISI Token
+* KISI Token, also known as "smart key"
 * [Heroku Account](https://www.heroku.com/)
 * [Twilio Account](https://www.twilio.com/)
 
