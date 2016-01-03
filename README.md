@@ -2,6 +2,8 @@
 
 Interactive voice response system for unlocking the doors with just a phone.
 
+![](https://raw.githubusercontent.com/yevgenko/kisi-ivr/master/kisi-ivr.png)
+
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/yevgenko/kisi-ivr)
 
 ## Requirements
