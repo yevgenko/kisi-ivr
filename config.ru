@@ -18,7 +18,7 @@ app = -> (env) do
                    kisi.open_door(door)
                    "Welcome!"
                  else
-                   "Can't find the door!"
+                   "Sorry, I can't find that door!"
                  end
       response = <<-EOH
 <?xml version="1.0" encoding="UTF-8"?>
@@ -28,7 +28,7 @@ app = -> (env) do
 </Response>
       EOH
     else
-      greeting = "Welcome! "
+      greeting = "Thank you for using KISI! "
       doors = kisi.get_doors
       doors.each_with_index do |current_door, i|
         greeting << "To open #{current_door["name"]}, press #{i+1}, "
