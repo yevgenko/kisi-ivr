@@ -28,17 +28,20 @@ app = -> (env) do
 </Response>
       EOH
     else
-      greeting = "Welcome!"
+      greeting = "Welcome! "
       doors = kisi.get_doors
       doors.each_with_index do |current_door, i|
-        greeting << "To open #{current_door["name"]}, press #{i+1}."
+        greeting << "To open #{current_door["name"]}, press #{i+1}, "
       end
       response = <<-EOH
 <?xml version="1.0" encoding="UTF-8"?>
 <Response>
   <Gather numDigits="1">
     <Say>#{greeting}</Say>
+    <Pause length="10"/>
   </Gather>
+  <Say>Sorry, I didn't recognize that, please try again.</Say>
+  <Redirect>/</Redirect>
 </Response>
       EOH
     end
