@@ -15,7 +15,7 @@ app = -> (env) do
       doors = kisi.get_doors
       door = doors[req.params['Digits'].to_i - 1]
       greeting = if door
-                   kisi.open_door(door)
+                   kisi.unlock_door(door)
                    "Welcome!"
                  else
                    "Sorry, I can't find that door!"
